@@ -1,0 +1,24 @@
+﻿<Page x:Class="MGSL.pages.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MGSL.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="470" d:DesignWidth="790"
+      Title="Home" Loaded="Page_Loaded">
+    <Border CornerRadius="8" Margin="10">
+        <Border.Background>
+            <SolidColorBrush Color="#FFF1F3F8"/>
+        </Border.Background>
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="0"/>
+        </Border.Effect>
+        <Grid>
+            <Button x:Name="startServer" Content="开启服务器" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Normal" Click="startServer_Click" MouseDoubleClick="startServer_MouseDoubleClick" Style="{StaticResource AccentButtonStyle}" Margin="0,0,10,10" Height="70" Width="210"/>
+            <Label x:Name="welcomelabel" Content="欢迎使用MGSL开服器！" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" FontSize="22"/>
+            <Label Content="公告：" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+            <TextBox x:Name="noticeLab" Margin="10,46,11,179" IsReadOnly="True" VerticalScrollBarVisibility="Auto" FontSize="14"/>
+        </Grid>
+    </Border>
+</Page>

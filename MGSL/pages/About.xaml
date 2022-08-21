@@ -1,0 +1,52 @@
+﻿<Page x:Class="MGSL.pages.About"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MGSL.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="470" d:DesignWidth="790"
+      Title="About" Loaded="Page_Loaded">
+
+    <Grid>
+        <Border CornerRadius="8" Margin="31,10,29,0" MouseLeftButtonUp="Border_MouseLeftButtonUp" VerticalAlignment="Top" Height="140">
+            <Border.Background>
+                <SolidColorBrush Color="#FFF1F3F8"/>
+            </Border.Background>
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid>
+                <Label Content="关于开服器" Foreground="Black" FontSize="18" Margin="10,10,620,96" FontWeight="Bold"/>
+                <Label Content="Minecraft Grass Server Launcher(MGSL) Copyright © 2021-2022 By Waheal&#xA;开服器的成功制作离不开以下人员的帮助及支持：&#xA;xiaoyu/樱花味的小可乐——提供开服器部分下载源&#xA;初梦——提供内网映射服务    Yu_Xuan——开服器技术支持&#xA;官方文档：https://msdoc.nstarmc.cn/" Margin="10,40,150,2" FontSize="14"/>
+                <Image Source="/MGSL;component/我的世界开服器_00001.ico" Margin="111,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Height="25"/>
+            </Grid>
+        </Border>
+        <Border x:Name="openSource" CornerRadius="8" Margin="31,178,29,0" MouseLeftButtonUp="openSource_MouseLeftButtonUp" VerticalAlignment="Top">
+            <Border.Background>
+                <SolidColorBrush Color="#FFF1F3F8"/>
+            </Border.Background>
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid>
+                <Label Content="开源（Github）" Foreground="Black" FontSize="18" Margin="10,10,590,28" FontWeight="Bold"/>
+                <Label Content="地址：https://github.com/Waheal/MGSL" Margin="10,40,401,10" FontSize="16"/>
+                <Image Source="/MGSL;component/images/github_PNG40.png" Margin="145,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Height="24"/>
+            </Grid>
+        </Border>
+        <Border x:Name="support" CornerRadius="8" Margin="31,283,29,0" MouseLeftButtonUp="support_MouseLeftButtonUp" VerticalAlignment="Top">
+            <Border.Background>
+                <SolidColorBrush Color="#FFF1F3F8"/>
+            </Border.Background>
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0"/>
+            </Border.Effect>
+            <Grid>
+                <Label Content="赞助·爱发电" Foreground="Black" FontSize="18" Margin="10,10,619,133" FontWeight="Bold"/>
+                <Image Source="/MGSL;component/images/AiFaDian.png" Margin="112,0,0,131" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="25" Width="25"/>
+                <Label Content="软件制作不易，您的一分赞助是我的十分动力，十分期待您的赞助&#xA;地址：https://afdian.net/@makabaka123&#xA;&#xA;点我查看详细赞助名单" Margin="10,40,10,10" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="116" Width="706"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

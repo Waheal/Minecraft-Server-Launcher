@@ -1,0 +1,28 @@
+﻿<Window x:Class="MGSL.DownloadPorM"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:local="clr-namespace:MGSL"
+        mc:Ignorable="d"
+        Title="下载Mods（该功能为实验功能，如有bug请及时上报）" Height="450" Width="809" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Background="#FFF1F3F8" Loaded="Window_Loaded">
+    <Grid>
+        <Button x:Name="getFeature" Content="获取精选模组" Margin="530,144,0,0" VerticalAlignment="Top" Click="getFeature_Click"/>
+        <ListBox x:Name="listBox" Margin="0,46,459,0" MouseDoubleClick="listBox_MouseDoubleClick"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="377,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="352"/>
+        <Button x:Name="searchMod" Content="搜索" Margin="734,103,0,0" VerticalAlignment="Top" Click="searchMod_Click"/>
+        <Button x:Name="downloadMod" Content="获取模组版本列表" Margin="649,144,0,0" VerticalAlignment="Top" Click="downloadMod_Click"/>
+        <Label x:Name="label1" Content="下载进度……" HorizontalAlignment="Left" Margin="350,200,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="modVersions" Margin="355,258,0,0" MouseDoubleClick="modVersions_MouseDoubleClick"/>
+        <ProgressBar x:Name="pbar" HorizontalAlignment="Left" Height="5" Margin="400,187,0,0" VerticalAlignment="Top" Width="362"/>
+        <Label x:Name="label1_Copy" Content="你可以双击左边列表中的项目以进入所选mod的网站&#xA;&#xA;下载地址默认为服务器根目录中的mods文件夹，如果找不&#xA;到该文件夹，开服器会下载至MGSL文件夹中" HorizontalAlignment="Left" Margin="355,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="MOD列表：" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="版本列表：（双击选中的版本即可下载）" HorizontalAlignment="Left" Margin="355,225,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ui:ProgressRing x:Name="loadingRing" HorizontalAlignment="Left" Margin="346,141,0,0" VerticalAlignment="Top" Height="37" Width="36" Background="Transparent"/>
+        <Label x:Name="lb01" Content="加载中，请稍等……" HorizontalAlignment="Left" Margin="389,150,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Rectangle HorizontalAlignment="Left" Height="390" Margin="0,45,0,0" Stroke="Black" VerticalAlignment="Top" Width="341"/>
+        <Rectangle HorizontalAlignment="Left" Height="178" Margin="354,257,0,0" Stroke="Black" VerticalAlignment="Top" Width="455"/>
+
+    </Grid>
+</Window>
