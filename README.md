@@ -1,6 +1,7 @@
 <div align=center>
 <img src="https://s1.328888.xyz/2022/08/22/bhbDU.png">
 </div>
+
 # Minecraft Gress Server Launcher（MGSL）
 
 MGSL开服器，重新出发，美观实用！
