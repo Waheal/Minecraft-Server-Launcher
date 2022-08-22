@@ -41,7 +41,7 @@ namespace MGSL
         {
             loadingRing.IsActive = true;
             lb01.Visibility = Visibility.Visible;
-            var cfApiClient = new CurseForge.APIClient.ApiClient("$2a$10$GMZXi.aieoL.ul.UJK6WYuTOBa.jzrcfZEWRD0Lff7ekk/4i4i.2K", "2035582067@qq.com");
+            var cfApiClient = new CurseForge.APIClient.ApiClient("", "");
             var featuredMods = await cfApiClient.GetFeaturedModsAsync(new GetFeaturedModsRequestBody
             {
                 GameId = 432,
