@@ -105,7 +105,7 @@ namespace MGSL
         {
             loadingRing.IsActive = true;
             lb01.Visibility = Visibility.Visible;
-            var cfApiClient = new CurseForge.APIClient.ApiClient("$2a$10$GMZXi.aieoL.ul.UJK6WYuTOBa.jzrcfZEWRD0Lff7ekk/4i4i.2K", "2035582067@qq.com");
+            var cfApiClient = new CurseForge.APIClient.ApiClient("", "");
             var searchedMods = await cfApiClient.SearchModsAsync(432, null, null,null, textBox1.Text);
             listBox.Items.Clear();
             modIds.Clear();
@@ -166,7 +166,7 @@ namespace MGSL
         {
             loadingRing.IsActive = true;
             lb01.Visibility = Visibility.Visible;
-            var cfApiClient = new CurseForge.APIClient.ApiClient("$2a$10$GMZXi.aieoL.ul.UJK6WYuTOBa.jzrcfZEWRD0Lff7ekk/4i4i.2K", "2035582067@qq.com");
+            var cfApiClient = new CurseForge.APIClient.ApiClient("", "");
             label1.Content = "找不到服务器根目录中的mods文件夹，将下载至MGSL文件夹中";
             try
             {
@@ -317,7 +317,7 @@ namespace MGSL
         {
             loadingRing.IsActive = true;
             lb01.Visibility = Visibility.Visible;
-            var cfApiClient = new CurseForge.APIClient.ApiClient("$2a$10$GMZXi.aieoL.ul.UJK6WYuTOBa.jzrcfZEWRD0Lff7ekk/4i4i.2K", "2035582067@qq.com");
+            var cfApiClient = new CurseForge.APIClient.ApiClient("", "");
             var featuredMods = await cfApiClient.GetFeaturedModsAsync(new GetFeaturedModsRequestBody
             {
                 GameId = 432,
