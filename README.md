@@ -1,3 +1,4 @@
+![Alt text](https://s1.328888.xyz/2022/08/22/bhbDU.png)
 # Minecraft Gress Server Launcher（MGSL）
 
 MGSL开服器，重新出发，美观实用！
