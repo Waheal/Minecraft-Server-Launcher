@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:local="clr-namespace:MGSL"
         mc:Ignorable="d"
         Title="LodingForm" Height="103.238" Width="410" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{x:Null}" WindowStyle="None" AllowsTransparency="True">
@@ -15,7 +16,7 @@
                 <DropShadowEffect ShadowDepth="0"/>
             </Border.Effect>
             <Grid>
-                <Image HorizontalAlignment="Left" Margin="10,18,0,24" Width="47" Source="/我的世界开服器_00001.ico"/>
+                <ui:ProgressRing x:Name="lodingRing" HorizontalAlignment="Left" Margin="10,0,0,0" Width="47" Height="52"/>
                 <TextBlock x:Name="infolabel" HorizontalAlignment="Left" Margin="70,0,0,0" TextWrapping="Wrap" Text="加载中，请稍后……" VerticalAlignment="Center" FontSize="36"/>
             </Grid>
         </Border>
