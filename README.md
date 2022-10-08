@@ -2,9 +2,9 @@
 <img src="https://s1.328888.xyz/2022/08/22/bhbDU.png">
 </div>
 
-# Minecraft Gress Server Launcher（MGSL）
+# Minecraft Server Launcher（MGSL）
 
-MGSL开服器，重新出发，美观实用！
+MSL开服器，重新出发，美观实用！
 
 # 视频介绍：
 https://www.bilibili.com/video/BV1D34y127m8
