@@ -2,7 +2,7 @@
 <img src="https://s1.328888.xyz/2022/08/22/bhbDU.png">
 </div>
 
-# Minecraft Server Launcher（MGSL）
+# Minecraft Server Launcher（MSL）
 
 MSL开服器，重新出发，美观实用！
 
