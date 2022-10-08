@@ -1,0 +1,46 @@
+﻿<Window x:Class="MSL.DownloadPorM"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:local="clr-namespace:MSL"
+        mc:Ignorable="d"
+        Title="下载Mod" Height="450" Width="809" WindowStartupLocation="CenterOwner" ResizeMode="CanMinimize" Loaded="Window_Loaded" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Storyboard x:Key="HideWindow">
+                <DoubleAnimation Duration="0:0:0.2" From="1" To="0" Storyboard.TargetProperty="Opacity" FillBehavior="Stop" />
+            </Storyboard>
+            <Storyboard x:Key="ShowWindow" >
+                <DoubleAnimation Duration="0:0:0.2" From="0" To="1" Storyboard.TargetProperty="Opacity" FillBehavior="Stop"/>
+            </Storyboard>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Border x:Name="mainBorder" CornerRadius="5" Margin="5,4,5,5" MouseLeftButtonDown="mainBorder_MouseLeftButtonDown">
+        <Border.Background>
+            <SolidColorBrush Color="#FFF1F3F8"/>
+        </Border.Background>
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="0"/>
+        </Border.Effect>
+        <Grid>
+            <ListBox x:Name="listBox" Margin="11,46,459,33" MouseDoubleClick="listBox_MouseDoubleClick" SelectionChanged="listBox_SelectionChanged"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="440,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289"/>
+            <Button x:Name="searchMod" Content="搜索" Margin="734,116,0,0" VerticalAlignment="Top" Click="searchMod_Click"/>
+            <Button x:Name="downloadMod" Content="获取所选模组版本列表" Margin="353,159,0,0" VerticalAlignment="Top" Click="downloadMod_Click" Width="215" IsEnabled="False"/>
+            <Label x:Name="label1" Content="下载进度……" HorizontalAlignment="Left" Margin="11,414,0,0" VerticalAlignment="Top"/>
+            <ListBox x:Name="modVersions" Margin="354,232,11,33" MouseDoubleClick="modVersions_MouseDoubleClick"/>
+            <ProgressBar x:Name="pbar" HorizontalAlignment="Center" Height="4" Margin="0,437,0,0" VerticalAlignment="Top" Width="794"/>
+            <Label x:Name="label1_Copy" Content="你可以双击左边列表中的项目以进入所选mod的网站&#xA;下载地址默认为服务器根目录中的mods文件夹，如果找不到该文件夹，&#xA;开服器会下载至MSL文件夹中" HorizontalAlignment="Left" Margin="353,46,0,0" VerticalAlignment="Top"/>
+            <Label Content="MOD列表：" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" FontSize="22"/>
+            <Label Content="版本列表：（双击选中的版本即可下载）" HorizontalAlignment="Left" Margin="354,198,0,0" VerticalAlignment="Top" FontSize="22"/>
+            <ui:ProgressRing x:Name="loadingRing" HorizontalAlignment="Left" Margin="618,156,0,0" VerticalAlignment="Top" Height="37" Width="36" Background="Transparent"/>
+            <Label x:Name="lb01" Content="加载中，请稍等……" HorizontalAlignment="Left" Margin="659,166,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+            <Rectangle HorizontalAlignment="Left" Height="364" Margin="10,45,0,0" Stroke="Black" VerticalAlignment="Top" Width="331"/>
+            <Rectangle HorizontalAlignment="Left" Height="178" Margin="353,231,0,0" Stroke="Black" VerticalAlignment="Top" Width="435"/>
+            <Label Content="搜索Mods" HorizontalAlignment="Left" Margin="350,120,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <Button x:Name="closeWindow" Content="✕" Margin="763,0,0,0" VerticalAlignment="Top" Background="{x:Null}" Click="closeWindow_Click"/>
+        </Grid>
+    </Border>
+</Window>
