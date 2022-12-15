@@ -20,7 +20,7 @@ CurseForge.APIClient 1.4.0
 
 Microsoft.Windows.SDK.Contracts 10.0.22621.1
 
-ModernWpfUI 0.9.6
+HandyControl
 
 Newtonsoft.Json 13.0.1
 
