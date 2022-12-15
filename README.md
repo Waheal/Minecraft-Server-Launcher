@@ -20,7 +20,7 @@ CurseForge.APIClient 1.4.0
 
 Microsoft.Windows.SDK.Contracts 10.0.22621.1
 
-HandyControl
+HandyControl 3.4.0
 
 Newtonsoft.Json 13.0.1
 
@@ -29,6 +29,8 @@ System.Runtime.WindowsRuntime 4.7.0
 System.Runtime.WindowsRuntime.UI.Xaml 4.7.0
 
 System.ValueTuple 4.5.0
+
+SharpZipLib 1.4.1
 
 # 请前往QQ群下载软件：
 
